@@ -21,7 +21,8 @@ app.use(cookieParser());
 
 app.use("/", indexRouter);
 
-app.listen(3005, () => {
+const PORT = process.env.PORT || 3005;
+app.listen(PORT, () => {
   console.log("Example app listening on port 3005!");
 });
 module.exports = app;
