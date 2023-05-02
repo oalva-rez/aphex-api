@@ -11,6 +11,7 @@ const productSchema = new mongoose.Schema(
     genre: String,
     bpm: String,
     key: String,
+    slug: String,
     createdAt: String,
   },
   { collection: "products" }
